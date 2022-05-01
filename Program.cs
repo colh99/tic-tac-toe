@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+CSE 210 Assignment: "01 Ponder & Prove: Developer (Tic-Tac-Toe)"
+Colby Hale;
+*/
+
+using System;
 
 namespace TicTacToe
 {
@@ -23,7 +28,7 @@ namespace TicTacToe
                 ValidSpot = false;
                 while (ValidSpot == false)
                 {
-                    Console.Write($"{CurrentPlayer}, pick a spot! ");
+                    Console.Write($"{CurrentPlayer}, pick a spot! (1-9): ");
                     ChosenSpot = int.Parse(Console.ReadLine());
                     ValidSpot = CheckForValidSpot(grid, ChosenSpot, ValidSpot, Player1, Player2);
                 }
